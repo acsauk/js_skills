@@ -120,6 +120,14 @@
 
   <script>
 
+    const panels = document.querySelectorAll('.panel');
+
+    function toggleOpen() {
+      this.classList.toggle('open');
+    }
+
+    panels.foreach(panel => panel.addEventListener('click', toggleOpen));
+
   </script>
 
 
