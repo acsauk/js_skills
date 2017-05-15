@@ -50,7 +50,9 @@
     const index = comments.findIndex(comment => comment.id === 832423);
     console.log(index)
 
-    console.table(comments.splice(index, -1));
+    // EITHER
+
+    console.table(comments.splice(index, 1));
 
   </script>
 </body>
