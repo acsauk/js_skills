@@ -4,14 +4,12 @@ class TaskCollection {
   }
 
   log() {
-    this.tasks.forEach(function(task){
-      console.log(task);
-    });
+    this.tasks.forEach(task => console.log(task));
   }
 }
 
 class Task {
-  
+
 }
 
 new TaskCollection([
