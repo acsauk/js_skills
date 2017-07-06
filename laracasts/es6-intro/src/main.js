@@ -3,13 +3,16 @@ class TaskCollection {
     this.tasks = tasks;
   }
 
-  log() {
-    this.tasks.forEach(task => console.log(task));
+  prepare() {
+    this.tasks.forEach(task => task.toGulp());
+    }
   }
 }
 
 class Task {
-
+  toGulp() {
+    console.log('converting to gulp');
+  }
 }
 
 new TaskCollection([
