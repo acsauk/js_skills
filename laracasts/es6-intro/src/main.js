@@ -6,7 +6,6 @@ class TaskCollection {
   prepare() {
     this.tasks.forEach(task => task.toGulp());
     }
-  }
 }
 
 class Task {
@@ -17,4 +16,4 @@ class Task {
 
 new TaskCollection([
   new Task, new Task, new Task
-]).log();
+]).prepare();
