@@ -1,4 +1,8 @@
-function applyDiscount(cost, discount = .10) {
+function defaultDiscount() {
+  return .10;
+}
+
+function applyDiscount(cost, discount = defaultDiscount()) {
 
   return cost - (cost * discount);
 }
